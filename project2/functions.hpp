@@ -1,0 +1,32 @@
+bool judgeResultPositive(string a, string b);
+int compareNum(string a, string b);
+int compareNum1(string &a, string &b);
+string NumDeleteKuohao(string &a);
+bool judgeLegalKuohao(string a);
+int findFirstLegalRKuohao(string a);
+int findFirstLegalLKuohao(string a);
+string MultiplyBothInteger(string a, string b);
+string MultiplyBothFloat(string a, string b);
+string MultiplyAIntegerBFloat(string a, string b);
+string MultiplyAFloatBInteger(string a, string b);
+string calculateMultiply(string a, string b);
+string Multiply(string a);
+string addBothInteger(string a, string b);
+string addBothFloat(string a, string b);
+string addAIntegerBFloat(string a, string b);
+string addAFloatBInteger(string a, string b);
+string calculateAdd(string a, string b);
+string Add(string a);
+string MinusBothInteger(string a, string b);
+string MinusBothFloat(string a, string b);
+string Minus(string a);
+string DivideBothFloat(string a, string b);
+string Divide(string a);
+bool findCorrectJianhao(string a);
+string calculateNoKuohao(string a);
+string changeOutput(string c);
+string deleteKuohao(string a);
+bool judgeChushuZero(string a);
+bool judgeIllegalInput(string a);
+
+
