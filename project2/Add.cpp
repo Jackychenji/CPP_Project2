@@ -86,10 +86,15 @@ string addBothFloat(string a, string b)
     }
 
     int total[resultlength1] = {0};
-    for (size_t i = 0, j = 0, k = 0; i < aright.length() & j < bright.length(); i++, j++, k++)
+    for (size_t i = 0; i < aright.length() ; i++)
     {
-        total[k] += a1[i] + b1[j];
+        total[i] += a1[i] ;
     }
+    for (size_t i = 0; i < bright.length(); i++)
+    {
+        total[i] += b1[i];
+    }
+    
 
     for (size_t i = resultlength1 - 1; i > 0; i--)
     {
@@ -143,19 +148,23 @@ string addBothFloat(string a, string b)
     for (size_t k = resultlength2 - 1; k > 0; k--)
     {
         total1[k] += a2[k] + b2[k];
+        
         if (total1[k] >= 10)
         {
             total1[k] -= 10;
             total1[k - 1] += 1;
         }
     }
+    
+
     string cleft = "";
 
     for (size_t i = 0; i < resultlength2; i++)
     {
         cleft.append(to_string(total1[i]));
+        
     }
-
+   
     string c = "";
     c.append(cleft);
     c.append(".");
