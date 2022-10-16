@@ -559,11 +559,7 @@ int main()
             str.insert(m, a1[i]);
         }
 
-        if (!judgeIllegalInput(str))
-        {
-            cout << "Invalid input" << endl;
-            return 0;
-        }
+       
 
         if (str == "0")
             return 0;
@@ -596,24 +592,22 @@ int main()
             cout << "Input a Formula to calculate, input 0 to exit" << endl;
 
             getline(cin, str);
-            if (!judgeIllegalInput(str))
-            {
-                cout << "Invalid input" << endl;
-                continue;
-            }
+            
 
             if (str == "0")
                 return 0;
 
             str = deleteKuohao(str);
+            
             if (judgeChushuZero(str))
             {
                 cout << "Do not let divide number to be zero." << endl;
                 continue;
             }
             str = calculateNoKuohao(str);
-
+            
             NumDeleteKuohao(str);
+            
             if (str.substr(0, 1) == "-")
             {
                 str.erase(0, 1);
@@ -622,8 +616,8 @@ int main()
             }
             else
                 str = changeOutput(str);
-
             cout << str << endl;
+            
         }
     }
 }
